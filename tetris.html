@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tetris</title>
+        <link rel="stylesheet" href="./tetris.css">
+    </head>
+    <body>
+        <section class="inicio">
+
+            <div class="button"> 
+
+                <p class="tetris-p titulo">TETRIS</p>
+                <a href="#comenzarjuego" target="blank" class="button-jugar subtitulo texto-blanco">Jugar aquí</a>
+                <a href="#instruccionesjuego" target="blank" class="button-jugar subtitulo texto-blanco">Instrucciones</a>
+
+            </div>
+
+        </section>
+
+
+        <section class="caja">
+            <div id=instruccionesjuego class=caja-instrucciones>
+                <p class="titulo-s">Instrucciones del Tetris</p>
+            </div>
+
+        </section>
+        <section class="juego">
+
+            <div id="comenzarjuego"class="cajatetris">
+                <canvas id="tetris" width="320" height="400"></canvas>
+                <script src="./tetris.js" charset="utf-8"></script>
+
+                <div class="botones">
+                    <button id="btnIniciar" class="btn btn-success"><i class="fas fa-play"></i></button>
+                    <button hidden id="btnPausar" class="btn btn-success"><i class="fas fa-pause"></i></button>
+                    <button id="btnIzquierda" class="btn btn-success"><i class="fas fa-arrow-left"></i></button>
+                    <button id="btnAbajo" class="btn btn-success"><i class="fas fa-arrow-down"></i></button>
+                    <button id="btnDerecha" class="btn btn-success"><i class="fas fa-arrow-right"></i></button>
+                    <button id="btnRotar" class="btn btn-success"><i class="fas fa-undo"></i></button>
+                    <button class="btn btn-danger" id="reset">Reset</button>
+                </div>
+            </div>
+ 
+        </section>
+    </body>
+</html>
