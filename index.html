@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Tetris</title>
+        <title>Tetris by Andreina y Cristian</title>
         <link rel="stylesheet" href="./tetris.css">
     </head>
     <body>
@@ -78,5 +79,23 @@
  
         </section>
         <script src="./tetris.js" charset="utf-8"></script>
+
+            <div id="comenzarjuego"class="cajatetris">
+                <canvas id="tetris" width="220" height="400"></canvas>
+                <div id="score"></div>
+                <script src="./tetris.js" charset="utf-8"></script>
+
+                <div class="botones">
+                    <button id="btnIniciar" class="btn btn-success"><i class="fas fa-play"></i></button>
+                    <button hidden id="btnPausar" class="btn btn-success"><i class="fas fa-pause"></i></button>
+                    <button id="btnIzquierda" class="btn btn-success"><i class="fas fa-arrow-left"></i></button>
+                    <button id="btnAbajo" class="btn btn-success"><i class="fas fa-arrow-down"></i></button>
+                    <button id="btnDerecha" class="btn btn-success"><i class="fas fa-arrow-right"></i></button>
+                    <button id="btnRotar" class="btn btn-success"><i class="fas fa-undo"></i></button>
+                    <button class="btn btn-danger" id="reset">Reset</button>
+                </div>
+            </div>
+ 
+        </section>
     </body>
 </html>
