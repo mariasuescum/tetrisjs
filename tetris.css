@@ -3,7 +3,6 @@
 
 .inicio {
     background-image: url(FONDO.png);
-    background-size: ;
     width: 100%;
      height: 100vh;
     display: flex;
@@ -77,15 +76,81 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction:row;
+
     }
 .cajatetris {
         flex-direction: column;
+        position: relative;
         
     }
 
 #btnDerecha  {
     text-decoration: none;
     background-color: #2091F9;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 5px 0px;
+    text-align: center;
+    width: auto;
+}
+
+.div {
+    background-image: url(/caja.jpg);
+    border-radius: 20px;
+    text-align: center;
+    width: auto;
+    margin: 10px 0px;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+.sub-titulo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 25px;    
+}
+
+.color-texto-blanco{
+    color: white;
+}
+
+.caja-instrucciones{
+    font-family: 'Raleway', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 7px 0px;
+    padding: 10px 30px;
+    text-align: center;
+    
+
+}
+
+.caja-instrucciones h2{
+    background-image: url(/azul.png);
+    border-radius: 20px;
+    margin: 10px 0px;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.puntaje {
+    background-image: url(/azul.png);
+    border-radius: 20px;
+    margin: 10px 0px;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+}
+
+.final { 
+    display: flex;
+}
+
+.botoncomenzar { 
+    text-decoration: none;
+    background-color: #1f91fc;
     padding: 10px 20px;
     border-radius: 25px;
     margin: 5px 0px;

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tetris</title>
+        <link rel="stylesheet" href="./tetris.css">
+    </head>
+    <body>
+        <section class="inicio">
+
+            <div class="button"> 
+
+                <p class="tetris-p titulo">TETRIS</p>
+                <a href="#comenzarjuego" target="blank" class="button-jugar subtitulo texto-blanco">Jugar aquí</a>
+                <a href="#instruccionesjuego" target="blank" class="button-jugar subtitulo texto-blanco">Instrucciones</a>
+
+            </div>
+
+        </section>
+
+
+        <section class="caja">
+            <div id=instruccionesjuego class=caja-instrucciones>
+                <p class="titulo-s">Instrucciones del Tetris</p>
+                <img src="/icon.png" alt="">
+            </div>
+
+            <div class="caja-instrucciones color-texto-blanco" >
+                <h2>El objetivo del Tetris es anotar tantos puntos como sea posible despejando las líneas horizontales de los Bloques.
+                     El jugador debe rotar, mover y dejar caer los Tetriminos que caen dentro de Matrix (campo de juego).
+                      Las líneas se borran cuando se llenan de bloques y no tienen espacios vacíos.</h2>
+                      <h2>
+                        A medida que se despejan las líneas, el nivel aumenta y los Tetriminos caen más rápido, lo que hace que el juego sea progresivamente más
+                        desafiante. Si los Bloques aterrizan sobre la parte superior del campo de juego, el juego ha terminado.
+                      </h2>
+            </div>
+
+        </section>
+        <section class="juego">
+            
+            <div id="comenzarjuego"class="cajatetris">
+                <div class="puntaje sub-titulo">
+                    <p>Puntaje</p>
+
+                    <div id="score"></div>
+
+                </div>
+                
+                <canvas id="tetris" width="240" height="400"></canvas>
+                
+
+                
+
+                <div class="div sub-titulo texto-blanco">
+                    ◄ Mover a la izquierda  
+                    <br>
+                    ► Mover a la derecha  
+                    <br>
+                    ▼ Bajar la pieza  
+                    <br>
+                    ▲ Rotar la pieza  
+                </div>
+
+                <div class="botoncomenzar">
+                    <p class="subtitulo">Pulse Aquí para comenzar Juego</p>
+                    <button onclick="playgameStart()">comenzar</button></div>
+               
+            </div>
+
+            <div class="final">
+                <img src="/icon.png" alt="">
+                <div>
+                    <p class="subtitulo texto-blanco">Andreina Suescum</p>
+                    <p class="subtitulo texto-blanco">Cristian León</p>
+                </div>
+
+            </div>
+ 
+        </section>
+        <script src="./tetris.js" charset="utf-8"></script>
+    </body>
+</html>
